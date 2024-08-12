@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app=application
 #import redge regressor and standerd scaler model
 ridge_model=pickle.load(open('models/ridge.pkl','rb'))
 standard_scaler=pickle.load(open('models/scaler.pkl','rb'))
